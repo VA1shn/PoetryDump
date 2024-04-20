@@ -1,0 +1,114 @@
+/* Color Palette */
+:root {
+    --dark-bg: #153448;
+    --dark-gray: #3C5B6F;
+    --light-gray: #948979;
+    --light-cream: #DFD0B8;
+}
+
+/* Global Styles */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--dark-bg);
+    color: var(--light-cream);
+}
+
+header, footer {
+    background-color: var(--dark-gray);
+    color: var(--light-cream);
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--light-gray);
+}
+
+main {
+    padding: 20px;
+}
+
+/* Poem Cards */
+.poem-card {
+    border: 1px solid var(--light-gray);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--dark-gray);
+}
+
+.poem-title {
+    font-weight: bold;
+    color: var(--light-cream);
+}
+
+.poem-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between;
+}
+
+.poem-text {
+    width: 60%; /* Adjust the width as needed */
+    text-align: justify; /* Align text to justify */
+}
+
+.poem-image {
+    width: 35%; /* Adjust the width as needed */
+    margin-left: 20px; /* Add spacing between poem and image */
+    display: flex; /* Use flexbox for image container */
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+}
+
+.poem-image img {
+    max-width: 100%; /* Limit max width of the image */
+    max-height: 100%; /* Limit max height of the image */
+    border-radius: 5px;
+}
+.poem-button {
+    background-color: var(--dark-gray);
+    color: var(--light-cream);
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px; /* Increased padding for larger buttons */
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 16px; /* Larger text size */
+}
+
+.poem-button:hover {
+    background-color: var(--light-gray);
+    color: var(--dark-bg);
+}
+/* Navigation Button Styles */
+.nav-button {
+    background-color: var(--light-cream);
+    color: var(--dark-gray);
+    border: none;
+    border-radius: 50px; /* Round button corners */
+    padding: 15px 30px; /* Increased padding for larger buttons */
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px; /* Larger text size */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.nav-button:hover {
+    background-color: var(--dark-gray);
+    color: var(--light-cream);
+}
